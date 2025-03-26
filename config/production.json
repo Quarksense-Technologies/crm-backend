@@ -1,0 +1,26 @@
+{
+    "app": {
+      "env": "production"
+    },
+    "server": {
+      "port": 5000,
+      "host": "0.0.0.0"
+    },
+    "database": {
+      "uri": "mongodb://mongo:27017/s-gen-crm"
+    },
+    "cors": {
+      "origin": ["https://your-production-domain.com", "https://admin.your-production-domain.com"],
+      "credentials": true
+    },
+    "logging": {
+      "level": "combined",
+      "format": "combined"
+    },
+    "security": {
+      "rateLimiter": {
+        "windowMs": 900000,
+        "max": 100
+      }
+    }
+  }
